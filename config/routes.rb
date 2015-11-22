@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # 追加(2015/11/22)
+  get '/items/:id' => 'items#show'
+
 end
