@@ -54,10 +54,21 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  # 商品追加
+  get '/items/new' => 'items#new'
+
   # 追加(2015/11/22)
   get '/items/:id' => 'items#show'
 
-  # 追加(2015/11/22) トップページ
+  # 追加(2015/11/22)
+  # 商品一覧ページ
   get '/items' => 'items#index'
+
+  # 新規追加情報の送信(post)
+  post '/items' => 'items#create'
+
+  # 修正情報の送信(post)
+  post '/items' => 'items#edit'
+
 
 end

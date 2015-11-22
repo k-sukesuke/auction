@@ -2,3 +2,9 @@
 <% @items.each do |item| %>
   <li><a href="/items/<%= item.id %>"><%= item.name %></a></li>
 <% end %>
+
+<br>
+
+<%= link_to '新規登録', "/items/new" %>
+<%= link_to '登録修正', "/items/edit" %>
+
