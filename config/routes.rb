@@ -57,4 +57,7 @@ Rails.application.routes.draw do
   # 追加(2015/11/22)
   get '/items/:id' => 'items#show'
 
+  # 追加(2015/11/22) トップページ
+  get '/items' => 'items#index'
+
 end
